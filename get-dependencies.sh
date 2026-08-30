@@ -24,7 +24,7 @@ echo "Building stable version of openMSX..."
 echo "---------------------------------------------------------------"
 REPO="https://github.com/openMSX/openMSX"
 TAG="$(curl -s https://api.github.com/repos/openMSX/openMSX/releases/latest | grep '"tag_name"' | cut -d '"' -f 4)"
-VERSION="${TAG#RELEASE_}"
+VERSION="${TAG#RELEASE_//_/.}"
 git clone "$REPO" ./openMSX
 echo "$VERSION" > ~/version
 
