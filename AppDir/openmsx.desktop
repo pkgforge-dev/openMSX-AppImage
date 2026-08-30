@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=openMSX
+GenericName=MSX Emulator
+Comment=The MSX emulator that aims for perfection
+Exec=openmsx
+Terminal=false
+Type=Application
+Icon=openMSX-logo-256.png
+StartupWMClass=openmsx
+Categories=Emulator;GTK;Game;
