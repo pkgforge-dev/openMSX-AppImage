@@ -16,10 +16,6 @@ echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano libdecor-mini
 
-# Comment this out if you need an AUR package
-#make-aur-package openmsx
-
-# If the application needs to be manually built that has to be done down here
 echo "Building stable version of openMSX..."
 echo "---------------------------------------------------------------"
 REPO="https://github.com/openMSX/openMSX"
