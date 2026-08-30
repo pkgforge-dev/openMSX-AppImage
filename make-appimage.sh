@@ -7,7 +7,7 @@ export ARCH
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
-export ICON=/usr/share/openmsx/icons/openMSX-logo-256.png
+export ICON=https://raw.githubusercontent.com/openMSX/openMSX/refs/heads/master/share/icons/openMSX-logo-256.png
 export STARTUPWMCLASS=openmsx
 export DEPLOY_OPENGL=1
 
