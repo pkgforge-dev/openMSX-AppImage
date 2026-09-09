@@ -22,7 +22,7 @@ REPO="https://github.com/openMSX/openMSX"
 TAG="$(curl -s https://api.github.com/repos/openMSX/openMSX/releases/latest | grep '"tag_name"' | cut -d '"' -f 4)"
 VERSION="${TAG#RELEASE_}"
 VERSION="${VERSION//_/.}"
-git clone "$REPO" ./openMSX
+git clone --depth 1 "$REPO" ./openMSX
 echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin
