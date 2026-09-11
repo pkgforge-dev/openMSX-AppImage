@@ -6,11 +6,7 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm \
-    glew      \
-    libtheora \
-    sdl2_ttf  \
-    tcl
+pacman -Syu --noconfirm glew libtheora sdl2_ttf tcl
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
